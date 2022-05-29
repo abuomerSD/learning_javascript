@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        emp = {name:"eltayeb", age:25,salary:5000};
+        document.writeln(emp.name+" "+ emp.age + " " + emp.salary + "\n");
+
+        emp2 = new Object();
+        emp2.name = "ahmed";
+        emp2.age = 33;
+        emp2.salary = 7000;
+
+        document.writeln(emp2.name+" "+ emp2.age + " " + emp2.salary);
+
+        function person(name,age){
+            this.name = name;
+            this.age = age;
+        }
+
+        p1 = new person("omer",40);
+        document.writeln(p1.name+" "+ p1.age + "<br>");
+        // arrays
+
+        var emps = ["eltayeb","osman","shihab"];
+        for(i = 0;i<emps.length;i++)
+        {
+            document.writeln(emps[i]+"<br>");
+        }
+
+        var emps2 = new Array();
+        emps2[0] = "khalid"
+        emps2[1] = "osama"
+        emps2[2] = "abdallah"
+
+        for(i = 0;i<emps.length;i++)
+        {
+            document.writeln(emps2[i]+"<br>");
+        }
+
+        var emps3 = new Array("mohammed","essa");
+
+        for(i = 0;i<emps.length;i++)
+        {
+            document.writeln(emps3[i]+"<br>");
+        }  
+
+        var str="This is JavaTpoint website";  
+        document.write(str.split(" ")); //splits the given string.  
+    </script>
+
+<span id="txt"></span> 
+<script>
+    var todayDate = new Date();
+    document.getElementById("txt").innerHTML = todayDate;
+</script>
+</body>
+</html>
